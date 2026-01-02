@@ -1,0 +1,14 @@
+names:
+- Tortoise
+- Container
+- Magpie
+- Sea turtle
+- Football
+- Ambulance
+- Ladder
+- Toothbrush
+- Syringe
+- Sink
+nc: 10
+train: e:\Download2\RMUTTO\yolo_train\dataset\images\train
+val: e:\Download2\RMUTTO\yolo_train\dataset\images\train

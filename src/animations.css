@@ -1,0 +1,45 @@
+/* animations.css */
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+
+.fade-in-out-enter {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 300ms, transform 300ms;
+}
+.slide-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.slide-fade-exit {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.slide-fade-exit-active {
+  opacity: 0;
+  transform: translateY(-40px) scale(0.98);
+}
+
+@keyframes shake {
+  10%, 90% { transform: translateX(-2px); }
+  20%, 80% { transform: translateX(4px); }
+  30%, 50%, 70% { transform: translateX(-8px); }
+  40%, 60% { transform: translateX(8px); }
+}
+
+.shake {
+  animation: shake 1.0s;
+}
+
